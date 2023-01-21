@@ -9,13 +9,7 @@ fun main() {
         puzzle { 2015 day 1 }
 
         part1 { input ->
-            var floor = 0
-            for (c in input) when (c) {
-                '(' -> floor++
-                else -> floor--
-            }
-
-            return@part1 "$floor"
+            input.fold(0) { acc, c -> if (c == '(') acc + 1 else acc - 1 }
         }
 
         part2 { input ->
@@ -25,9 +19,7 @@ fun main() {
                     '(' -> floor++
                     else -> floor--
                 }
-                if (floor < 0) {
-                    return@part2 "${index + 1}"
-                }
+                if (floor < 0) return@part2 "${index + 1}"
             }
             throw Exception()
         }
