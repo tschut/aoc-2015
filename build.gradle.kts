@@ -1,11 +1,11 @@
 kotlin {
     jvmToolchain {
-        this.languageVersion.set(JavaLanguageVersion.of(17))
+        this.languageVersion.set(JavaLanguageVersion.of(19))
     }
 }
 
 plugins {
-    kotlin("jvm") version "1.7.20"
+    kotlin("jvm") version "1.8.10"
     application
 }
 
@@ -17,5 +17,5 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.tschut:aoc-dsl:0.0.1")
+    implementation("io.github.tschut:aoc-dsl:0.1.11")
 }
