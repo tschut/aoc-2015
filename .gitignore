@@ -6,7 +6,7 @@
 /y2015/build/
 /y2015/build/classes/kotlin/main/
 /.idea/
-/.session
 /data/
 /lib/data
 /build/
+/src/main/resources/.session

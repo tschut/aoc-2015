@@ -17,5 +17,5 @@ repositories {
 }
 
 dependencies {
-    implementation("io.github.tschut:aoc-dsl:0.1.11")
+    implementation("io.github.tschut:aoc-dsl:0.1.12")
 }
